@@ -41,6 +41,9 @@ class Fio {
 	}
 
 
+	/**
+	 * @param array $data
+	 */
 	public function setData(array $data)
 	{
 		foreach ($data as $item => $value) {
