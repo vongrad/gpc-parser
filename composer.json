@@ -1,0 +1,24 @@
+{
+    "name": "smartsupp/gpc-parser",
+    "description": "GPC format decoder and decoder for generating transactions for accountant's system",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Michal Hlavka",
+            "email": "michal.hlavka@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "nette/tester": "@dev",
+        "tracy/tracy": "~2.3@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Smartsupp\\GpcParser\\": "src/"
+        }
+    },
+    "classmap": [
+        "src/Smartsupp/GpcParser/exceptions.php"
+    ]
+}
