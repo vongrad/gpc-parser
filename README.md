@@ -1,5 +1,9 @@
-# gpc-parser
+# GPC parser
 GPC format decoder and decoder for generating transactions for accountant's system 
+
+**Supports**
+
+- Fiobank
 
 Installation
 ------------
