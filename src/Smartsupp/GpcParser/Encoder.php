@@ -14,7 +14,7 @@ class Encoder
 	 * @param mixed          $line
 	 * @return mixed
 	 */
-	public function addValue($value, $bitPosition, $maxBitPosition, $autoFill = false, $align = 'left', $line)
+	public function addValue($value, $bitPosition, $maxBitPosition, $line, $autoFill = false, $align = 'left')
 	{
 		$value = (string) $value;
 		$value = $align == 'right' ? strrev($value) : $value;
