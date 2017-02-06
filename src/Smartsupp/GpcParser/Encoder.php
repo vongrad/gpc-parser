@@ -21,18 +21,19 @@ class Encoder
 
 		for ($i = 0; $i < $maxBitPosition; $i++) {
 
-			if ($isset = !isset($value[$i]) && !$autoFill) {
+			if (!isset($value[$i]) && !$autoFill) {
 				continue;
 			}
 
 			if ($align == 'left') {
-				$pos = ($bitPosition - 1) + $i;
+				$pos = ($bitPosition) + $i;
 			} else {
-				$pos = ($bitPosition + $maxBitPosition - 1) - $i;
+				$pos = ($bitPosition + $maxBitPosition) - $i;
 			}
 
-			$put = $isset ? $autoFill : $value[$i];
-			$line[$pos] = $put;
+			$put = !isset($value[$i]) ? $autoFill : $value[$i];
+
+			$line[$pos - 1] = $put;
 		}
 
 		return $line;

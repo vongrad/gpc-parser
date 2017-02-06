@@ -26,6 +26,7 @@ class Fio {
 		'type' => [1, 3, false, 'left'],
 		'account' => [4, 16, false, 'right'],
 		'account_name' => [20, 20, false, 'right'],
+		'client_name' => [98, 20, '0', 'left'],
 	];
 
 
