@@ -11,7 +11,8 @@
     "require": {},
     "require-dev": {
         "nette/tester": "@dev",
-        "tracy/tracy": "~2.3@dev"
+        "tracy/tracy": "~2.3@dev",
+        "nette/di": "^2.3"
     },
     "autoload": {
         "psr-0": {
