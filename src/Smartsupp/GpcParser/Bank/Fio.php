@@ -69,7 +69,7 @@ class Fio {
 	/**
 	 * @return string
 	 */
-	public function __toString()
+	public function encode()
 	{
 		return $this->output;
 	}

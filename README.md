@@ -50,7 +50,7 @@ $fio->setData([
 	],
 ]);
 
-echo $fio;
+echo $fio->encode();
 
 /*
 
