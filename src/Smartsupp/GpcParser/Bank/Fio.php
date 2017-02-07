@@ -19,13 +19,14 @@ class Fio {
 	private $encoder;
 
 	private static $dataPositions = [
-		'v_symbol' => [62, 9, false, 'left'],
+		'v_symbol' => [62, 9, false, 'right'],
 		'currency' => [119, 4, false, 'left'],
 		'date' => [123, 6, false, 'left'],
 		'price' => [49, 11, false, 'right'],
 		'type' => [1, 3, false, 'left'],
-		'account' => [4, 16, false, 'right'],
-		'account_name' => [20, 20, false, 'right'],
+		'account' => [4, 15, false, 'right'],
+		'account_name' => [19, 20, false, 'right'],
+		'account_counter' => [19, 15, false, 'right'],
 		'client_name' => [98, 20, '0', 'left'],
 	];
 
