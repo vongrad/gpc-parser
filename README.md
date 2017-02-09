@@ -23,7 +23,11 @@ $ php vendor/nette/tester/src/tester ./tests/SmartsuppTests/GpcParser/
 Usage
 ------------
 ```php
-$fio = new \Smartsupp\GpcParser\Bank\Fio(new \Smartsupp\GpcParser\Encoder());
+$fio = new \Smartsupp\GpcParser\Bank\Fio(
+    new \Smartsupp\GpcParser\Encoder(
+        new \Smartsupp\GpcParser\Utils()
+    )
+);
 $fio->setData([
 	[
 		'type' => '074',
