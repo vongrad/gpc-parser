@@ -17,9 +17,9 @@
     "autoload": {
         "psr-0": {
             "Smartsupp\\GpcParser\\": "src/"
-        }
-    },
-    "classmap": [
-        "src/Smartsupp/GpcParser/exceptions.php"
-    ]
+        },
+        "classmap": [
+            "src/Smartsupp/GpcParser/exceptions.php"
+        ]
+    }
 }
