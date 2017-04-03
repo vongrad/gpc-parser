@@ -47,6 +47,7 @@ class Fio {
 	 */
 	public function setData(array $data)
 	{
+		$this->output = '';
 		foreach ($data as $item => $value) {
 			$workingLine = $this->line;
 			foreach ($value as $lineItem => $lineValue) {
