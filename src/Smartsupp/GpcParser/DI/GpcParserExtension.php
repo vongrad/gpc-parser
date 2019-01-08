@@ -7,18 +7,18 @@ use Nette\DI\CompilerExtension;
 class GpcParserExtension extends CompilerExtension
 {
 
-	public function loadConfiguration()
+	public function loadConfiguration(): void
 	{
 		$builder = $this->getContainerBuilder();
 
 		$utils = $builder->addDefinition($this->prefix('utils'))
-			->setClass('Smartsupp\GpcParser\Utils', []);
+			->setFactory(\Smartsupp\GpcParser\Utils::class, []);
 
 		$encoder = $builder->addDefinition($this->prefix('encoder'))
-			->setClass('Smartsupp\GpcParser\Encoder', [$utils]);
+			->setFactory(\Smartsupp\GpcParser\Encoder::class, [$utils]);
 
 		$builder->addDefinition($this->prefix('fio'))
-			->setClass('Smartsupp\GpcParser\Bank\Fio', [$encoder]);
+			->setFactory(\Smartsupp\GpcParser\Bank\Fio::class, [$encoder]);
 	}
 
 }
