@@ -34,7 +34,7 @@ class Encoder
 		$value = $this->utils->remove_accents($value);
 		$value = $align == 'right' ? strrev($value) : $value;
 
-		for ($i = 0; $i < $maxBitPosition; $i++) {
+		for ($i = 0; $i <= $maxBitPosition; $i++) {
 
 			if (!isset($value[$i]) && !$autoFill) {
 				continue;
