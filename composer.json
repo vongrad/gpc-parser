@@ -1,11 +1,11 @@
 {
-    "name": "smartsupp/gpc-parser",
+    "name": "vongrad/gpc-parser",
     "description": "GPC format decoder and decoder for generating transactions for accountant's system",
     "type": "library",
     "authors": [
         {
-            "name": "Michal Hlavka",
-            "email": "michal.hlavka@gmail.com"
+            "name": "Adam Vongrej",
+            "email": "vongrejadam@gmail.com"
         }
     ],
     "require": {
