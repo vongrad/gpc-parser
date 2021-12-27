@@ -28,6 +28,7 @@ class Fio {
 		'account_name' => [19, 20, false, 'right'],
 		'account_counter' => [19, 15, false, 'right'],
 		'client_name' => [98, 20, '0', 'left'],
+		'transaction_type' => [61, 1, false, 'left']
 	];
 
 
